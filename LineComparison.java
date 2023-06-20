@@ -33,5 +33,11 @@ public class LineComparison {
                 "(" + x2 + "," + y2 + ") = " + length1);
         System.out.println("Length of the second line between points " + "(" + x3 + "," + y3 + ")," +
                 "(" + x4 + "," + y4 + ") = " + length2);
+
+        if (Double.valueOf(length1).equals(length2)) {
+            System.out.println("The lengths are equal.");
+        } else {
+            System.out.println("The lengths are not equal.");
+        }
     }
 }
