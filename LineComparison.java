@@ -34,10 +34,12 @@ public class LineComparison {
         System.out.println("Length of the second line between points " + "(" + x3 + "," + y3 + ")," +
                 "(" + x4 + "," + y4 + ") = " + length2);
 
-        if (Double.valueOf(length1).equals(length2)) {
-            System.out.println("The lengths are equal.");
-        } else {
-            System.out.println("The lengths are not equal.");
+        if (length1 == length2) {
+            System.out.println("Both lines are equal!!");
+        }else if (length1 > length2){
+            System.out.println("First line is greater than Second line!!");
+        }else if (length1 < length2) {
+            System.out.println("Second line is greater than First line!!");
         }
     }
 }
